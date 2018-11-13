@@ -1,23 +1,16 @@
 # Waddle
 ### Waddle CLI.
 
+## Installation
+Download the Repository.  Then do this (Once unzipped/decompressed):
+```
+cd Downloads\waddle-master
+isetup waddle.imp
+```
+
 ## Usage
 ```
-cd <dir>
-dir # test.txt
-imp waddle read test.txt
-```
-```
-...
-[FROM DIR COMMAND]
-text.txt
-
-[FROM WADDLE COMMAND]
-Hello world from test.txt!
-```
-
-## Methods
-```
-waddle read <filename>
-waddle write <filename>
+imp waddle <subcommand>
+imp waddle read <filename>
+imp waddle write <filename>
 ```
