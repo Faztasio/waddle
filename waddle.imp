@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /*
-imp index.imp write <filename>
-imp index.imp read <filename>
+imp waddle write <filename>
+imp waddle read <filename>
 */
 var write = sys.write;
 var read = sys.read;
