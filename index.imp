@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+/*
+imp index.imp write <filename>
+imp index.imp read <filename>
+*/
+var write = sys.write;
+var read = sys.read;
+var append = sys.append;
+
+var filename = sys.argv[1];
+if(sys.argv[0] == "write") {
+  var i = false;
+  while(!i == true) {
+    q = sys.input("> ")
+    if(!q == "<EOF>") {
+      append(filename,"\n" + q)
+    } else {
+      i = true;
+    }
+  }
+} else if(sys.argv[0] == "read") {
+  var f = read(filename);
+  var a = f.split("\n");
+  a.forEach(function(line) {
+    console.log(line)
+  })
+}
